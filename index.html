@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Scroller</title>
+
+<style>
+html,body{
+	margin:0px;
+	padding:0px;
+}
+#container{
+	width:600px;
+	height:300px;
+	border:1px solid #000;
+	top:100px;
+	margin:0 auto;	
+}
+</style>
+
+<link href="scrollToSlide.css" rel="stylesheet">
+<script src="jquery.js"></script>
+<script src="scrollToSlide.js"></script>
+<script>
+$(document).ready(function(){
+	ScrollSlider("container",300,500);	
+});
+</script>
+
+</head>
+
+<body>
+
+<div id="container" class="scrollslider">
+	<ul>
+		<li><img src="imgs/1.png" /></li>
+		<li><img src="imgs/2.png" /></li>
+		<li><img src="imgs/3.png" /></li>
+		<li><img src="imgs/4.png" /></li>
+	</ul>
+</div>
+
+</body>
+</html>
